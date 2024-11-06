@@ -39,7 +39,7 @@ export class Transaction{
             this.asset.quantity += this.quantity;
         } else if (this.type === 'sell'){
             if (this.asset.quantity < this.quantity) { //check if the asset has sufficient quantity
-                throw new Error('Insufficient quantity for sale of ${this.asset.name}');
+                throw new Error(`Insufficient quantity for sale of ${this.asset.name}`);
             }// Throw an error if there is not enough quantity to sell
             this.asset.quantity -= this.quantity; // Reduce the asset quantity for a valid sell transaction
         } else{
