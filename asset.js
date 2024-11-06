@@ -1,3 +1,5 @@
+// assets.js
+
 // Task 1 - Create the Asset Module
 
 // create an assets array 
