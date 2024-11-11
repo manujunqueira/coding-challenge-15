@@ -42,7 +42,7 @@ try {
     const transaction3 = new Transaction (1007, 'sell', 9); // attempt to sell more US Bonds than available
    logTransaction(transaction3, `Transaction 3: Attempted to sell 9 units of US Bond`);
 } catch(error) {
-    logTransaction(null, `Error: ${error.message}.`);
+    logTransaction(null, `Transaction 3: Error: ${error.message}.`);
 }
 
 // Update portfolio display after transactions
